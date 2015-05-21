@@ -1,3 +1,6 @@
+// Arduioui
+// Traffic light behavior with 6 LEDs
+
 int light_1_green = 2;
 int light_1_orange = 3;
 int light_1_red = 4;
@@ -12,7 +15,8 @@ int time_red = 1000;
 
 
 void setup() {
-  // setup code here, to run once:
+  // setup code here, to run once
+  
   pinMode(light_1_green, OUTPUT);
   pinMode(light_1_orange, OUTPUT);
   pinMode(light_1_red, OUTPUT);
@@ -24,7 +28,8 @@ void setup() {
 
 
 void loop() {
-  // main code here, to run repeatedly:
+  // main code here, to run repeatedly
+  
   digitalWrite(light_2_red, HIGH);
   digitalWrite(light_1_green, HIGH);
   delay(time_green);
